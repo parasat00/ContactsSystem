@@ -1,0 +1,45 @@
+# Laravel specific
+/vendor/
+/node_modules/
+/public/storage/
+/storage/*.key
+/storage/app/public/
+/storage/debugbar/
+/storage/logs/*.log
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/framework/cache/data/*
+/bootstrap/cache/*.php
+/bootstrap/cache/packages.php
+/bootstrap/cache/services.php
+
+# Vue specific
+/dist/
+/node_modules/
+# Ignore .env files which contain environment variables
+.env
+.env.*.local
+# Ignore Docker-related files
+docker-compose.override.yml
+docker-compose.*.yml
+docker-compose.override.*.yml
+
+# Ignore any build artifacts from Docker
+/.docker/
+# Ignore IDE specific files
+.vscode/
+.idea/
+.phpstorm.meta.php
+*.sublime-project
+*.sublime-workspace
+# Ignore composer.lock file if you prefer not to track it
+composer.lock
+
+# Ignore npm/yarn lock file if not needed
+package-lock.json
+yarn.lock
+
+# Ignore logs and temporary files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

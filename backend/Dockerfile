@@ -1,8 +1,5 @@
 FROM php:8.2-fpm
 
-# Copy custom PHP-FPM configuration
-COPY ./php-fpm/www.conf /usr/local/etc/php-fpm.d/www.conf
-
 # Copy composer.lock and composer.json into the working directory
 COPY composer.lock composer.json /var/www/html/
 
